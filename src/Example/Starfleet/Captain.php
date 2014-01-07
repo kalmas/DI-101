@@ -4,10 +4,16 @@ namespace Example\Starfleet;
 
 class Captain {
 
+	private $captainsLog;
+
+	public function __construct($log){
+		$this->captainsLog = $log;
+	}
+
 	public function issueCommand() {
 		
-		// Log Stardate
-		// Log Entry
+		$this->captainsLog->println("Captain's Log, {$this->getStardate()}", true);
+		$this->captainsLog->println($this->getEntry());
 
 		return $this->getCommand();
 	}
