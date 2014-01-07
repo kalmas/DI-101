@@ -17,7 +17,7 @@ class Captain {
 				, 'Second star to the right...and straight on \'til morning.'
 				, 'Assimilate this!'
 				, 'KHAAAN!!!'
-				, 'Sulu, You have the con.'
+				, 'Sulu, you have the con.'
 				, 'Take the bridge, Number One.'
 				, 'Warp speed!'
 
