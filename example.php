@@ -1,17 +1,18 @@
 <?php
+ini_set('date.timezone', 'US/Eastern');
+ini_set('display_errors', "1");
 
 require_once __DIR__ . '/vendor/autoload.php';
-ini_set('date.timezone', 'US/Eastern');
 
 use Example\Starfleet\Captain;
 use Example\Log\Console;
 use Example\Log\File;
 
 // logs to console
-$kirk = new Captain();
+$kirk = new Captain(new Console());
 
 // logs to file
-$picard = new Captain();
+$picard = new Captain(new File());
 
 echo "Kirk says: {$kirk->issueCommand()}\n";
 echo "Picard says: {$picard->issueCommand()}\n";
