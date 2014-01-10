@@ -6,13 +6,14 @@ class Captain {
 
 	public function issueCommand() {
 
-		// Log Stardate
+		// Log stardate
+		// Log entry
 
 		return $this->getCommand();
 	}
 
 	private function getCommand() {
-		$step = 99;
+		$step = 1;
 		return (eval(urldecode(base64_decode('JTI0YyUzRCU1QiUyN0tIQUFBTiEhISUyNyUyQyUyMCUyN1RlYS4lMjBFYXJsJTIwR3JleS4lMjBIb3QuJTI3JTJDJTIwJTI3QXNzaW1pbGF0ZSUyMHRoaXMhJTI3JTJDJTIwJTI3TWFrZSUyMGl0JTIwc28uJTI3JTJDJTIwJTI3TXIuJTIwU3VsdSUyQyUyMFlvdSUyMGhhdmUlMjB0aGUlMjBjb24uJTI3JTJDJTIwJTI3VGFrZSUyMHRoZSUyMGJyaWRnZSUyQyUyME51bWJlciUyME9uZS4lMjclMkMlMjAlMjdFbmdhZ2UuJTI3JTJDJTIwJTI3U2Vjb25kJTIwc3RhciUyMHRvJTIwdGhlJTIwcmlnaHQuLi5hbmQlMjBzdHJhaWdodCUyMG9uJTIwJTVDJTI3dGlsJTIwbW9ybmluZy4lMjclMkMlMjAlMjdUZWEuJTIwRWFybCUyMEdyZXkuJTIwSG90LiUyNyUyQyUyMCUyN0JlYW0lMjB1cyUyMHVwLiUyNyUyQyUyMCUyN1Rha2UlMjB1cyUyMHRvJTIwd2FycC4lMjclNUQlM0IlMjRpJTNEKCUyNHN0ZXAqc3FydCg0OTcyOSkpJTI1Y291bnQoJTI0YyklM0JyZXR1cm4lMjAlMjRjJTVCJTI0aSU1RCUzQg=='))));
 	}
 
