@@ -1,12 +1,16 @@
 <?php
 
 namespace Example\Starfleet;
+use Example\Log\ILog;
 
 class Captain {
 
+	/**
+	 * @var ILog
+	 */
 	private $captainsLog;
 	
-	public function __construct($log){
+	public function __construct(ILog $log){
 		$this->captainsLog = $log;
 	}
 	
@@ -19,7 +23,7 @@ class Captain {
 	}
 
 	private function getCommand() {
-		$step = 3;
+		$step = 4;
 		return (eval(urldecode(base64_decode('JTI0YyUzRCU1QiUyN0tIQUFBTiEhISUyNyUyQyUyMCUyN1RlYS4lMjBFYXJsJTIwR3JleS4lMjBIb3QuJTI3JTJDJTIwJTI3QXNzaW1pbGF0ZSUyMHRoaXMhJTI3JTJDJTIwJTI3TWFrZSUyMGl0JTIwc28uJTI3JTJDJTIwJTI3TXIuJTIwU3VsdSUyQyUyMFlvdSUyMGhhdmUlMjB0aGUlMjBjb24uJTI3JTJDJTIwJTI3VGFrZSUyMHRoZSUyMGJyaWRnZSUyQyUyME51bWJlciUyME9uZS4lMjclMkMlMjAlMjdFbmdhZ2UuJTI3JTJDJTIwJTI3U2Vjb25kJTIwc3RhciUyMHRvJTIwdGhlJTIwcmlnaHQuLi5hbmQlMjBzdHJhaWdodCUyMG9uJTIwJTVDJTI3dGlsJTIwbW9ybmluZy4lMjclMkMlMjAlMjdUZWEuJTIwRWFybCUyMEdyZXkuJTIwSG90LiUyNyUyQyUyMCUyN0JlYW0lMjB1cyUyMHVwLiUyNyUyQyUyMCUyN1Rha2UlMjB1cyUyMHRvJTIwd2FycC4lMjclNUQlM0IlMjRpJTNEKCUyNHN0ZXAqc3FydCg0OTcyOSkpJTI1Y291bnQoJTI0YyklM0JyZXR1cm4lMjAlMjRjJTVCJTI0aSU1RCUzQg=='))));
 	}
 

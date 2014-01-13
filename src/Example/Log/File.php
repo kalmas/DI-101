@@ -2,7 +2,7 @@
 
 namespace Example\Log;
 
-class File {
+class File implements ILog {
 
 	public function println($line, $emphasis=false) {
 		if($emphasis){
