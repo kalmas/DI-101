@@ -9,6 +9,6 @@ interface ILog {
 	 * @param $emphasis boolean
 	 * @return void
 	 */
-	public function println($line, $emphasis);
+	public function println($line, $emphasis=false);
 }
 
